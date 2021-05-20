@@ -32,6 +32,10 @@ class TestAirForceTarget(unittest.TestCase):
         cls.test_g = 5  # test group
         cls.test_e = 5  # test element
 
+        
+        # ----> in this case, for testing only, some hard-coding
+        # is acceptable
+
         # create a dict with multiple elements
         # ONLY TO BE USED IN TEST_GET_CD METHOD !!!!!!
         cls.test_elements_2 = dict({(5, 5):[50.80, 9.84, 49.20],
