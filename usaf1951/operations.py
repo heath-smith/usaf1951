@@ -4,6 +4,7 @@
 Helper functions for the AirForceTarget class.
 """
 
+
 def calc_line_pairs(group, element):
     """
     Calculates line pairs per millimeter for a given group/element combination.

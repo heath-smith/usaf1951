@@ -1,18 +1,17 @@
-#""" usaf1951
-#
-#This module contains the class AirForceTarget which allows users to design
-#and edit a custom USAF 1951 resolution target.
-#
-#Examples
-#------------
-#To install locally, download the package
-#and run 'python -m pip install <path to package>'
-#
-#"""
+""" usaf1951
+
+This module contains the class AirForceTarget which allows users to design
+and edit a custom USAF 1951 resolution target.
+
+Examples
+------------
+To install locally, download the package
+and run 'python -m pip install <path to package>'
+
+"""
 
 
 # import dependencies
-import os
 import sys
 import pandas as pd
 
@@ -87,12 +86,12 @@ class AirForceTarget:
         line_height = calc_height(group, element)
 
         # combine line info into list
-        elementInfo = [lines_per_mm, line_width, line_height]
+        element_info = [lines_per_mm, line_width, line_height]
 
 
         try:
             # try to add item to 'elements' class member
-            self.elements[(group, element)] = elementInfo
+            self.elements[(group, element)] = element_info
 
         except KeyError:
 
@@ -101,7 +100,7 @@ class AirForceTarget:
 
     def remove_element(self, group, element):
         """
-        Removes an element from the target. 
+        Removes an element from the target.
 
         Params
         ---------
